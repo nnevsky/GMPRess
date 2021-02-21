@@ -16,10 +16,12 @@
             <Button Content="Изменить"/>
             <Button Content="Удалить"/>
         </ToolBar>
-        <DataGrid Grid.Row="1">
+        <DataGrid Grid.Row="1" 
+                  CanUserAddRows="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Роль/Группа доступа" 
                                     Width="*"/>
+                <DataGridCheckBoxColumn Width="75"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
