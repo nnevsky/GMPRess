@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace GMPress.Administration.Views.Controls
 {
     /// <summary>
-    /// Interaction logic for UserListControl.xaml
+    /// Interaction logic for PersonalInfoControl.xaml
     /// </summary>
-    public partial class UserListControl : UserControl
+    public partial class PersonalInfoControl : UserControl
     {
-        public UserListControl()
+        public PersonalInfoControl()
         {
             InitializeComponent();
         }

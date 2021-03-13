@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GMPress.Administration.Views.Controls
+namespace GMPress.CommonViews.Views.Controls
 {
     /// <summary>
-    /// Interaction logic for UserListControl.xaml
+    /// Interaction logic for PersonEditControl.xaml
     /// </summary>
-    public partial class UserListControl : UserControl
+    public partial class PersonEditControl : UserControl
     {
-        public UserListControl()
+        public PersonEditControl()
         {
             InitializeComponent();
         }

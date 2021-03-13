@@ -1,20 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GMPress.Data.Entities
 {
-    public class Customer
+    public class Customer : Person
     {
-        public long CustomerID { get; set; } = 0;
-        public string INN { get; set; }
-        public Address Address { get; set; }
-        public List<ContactPerson> ContactList { get; set; } = new List<ContactPerson>();
-        public Customer()
-        {
+        public int CustomerId { get; set; }
 
-        }
+        public List<string> Phones { get; set; } = new List<string>();
+        public List<string> EMails { get; set; } = new List<string>();
     }
 }

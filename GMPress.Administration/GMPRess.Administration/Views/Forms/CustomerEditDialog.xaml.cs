@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GMPress.Administration.Views.Controls
+namespace GMPress.Administration.Views.Forms
 {
     /// <summary>
-    /// Interaction logic for UserListControl.xaml
+    /// Interaction logic for CustomerEditDialog.xaml
     /// </summary>
-    public partial class UserListControl : UserControl
+    public partial class CustomerEditDialog : Window
     {
-        public UserListControl()
+        public CustomerEditDialog()
         {
             InitializeComponent();
         }

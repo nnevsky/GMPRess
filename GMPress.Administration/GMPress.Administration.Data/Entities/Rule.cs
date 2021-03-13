@@ -1,14 +1,14 @@
 ﻿using System;
-using GMPress.Data.Entities;
+using GMPress.Data.ENUM;
 
 namespace GMPress.Administration.Data.Entities
 {
     /// <summary>
     /// Правило доступа
     /// </summary>
-    public class Rule : DisplayConverter
+    public class Rule
     {
-        public Guid RuleID { get; set; }
+        public Guid RuleID { get; set; } = Guid.NewGuid();
         /// <summary>
         /// Наименование правила доступа
         /// </summary>
@@ -20,7 +20,7 @@ namespace GMPress.Administration.Data.Entities
         /// <summary>
         /// Флаг включения правила доступа
         /// </summary>
-        public bool RuleChecked { get; set; }
+        public ACCESS_LEVEL AccessLevel { get; set; }
 
         public override string ToString() => RuleName;
     }

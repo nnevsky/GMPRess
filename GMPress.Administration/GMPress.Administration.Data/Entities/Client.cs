@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,11 +9,7 @@ namespace GMPress.Administration.Data.Entities
     {
         public long ClientID { get; set; } = 0;
 
-        public string EMail { get; set; }
+        public JObject ContactInfos { get; set; }
         
-        public Client(string clientName, string clientPassword)
-            : base(clientName, clientPassword)
-        {
-        }
     }
 }

@@ -56,6 +56,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Controls\PersonInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Controls\RuleListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -65,6 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Controls\UserListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Forms\CustomerEditDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -89,11 +97,16 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ViewModels\AdministrationController.cs" />
+    <Compile Include="ViewModels\PersonInfoController.cs" />
+    <Compile Include="ViewModels\UserEditController.cs" />
     <Compile Include="Views\AdministrationPage.xaml.cs">
       <DependentUpon>AdministrationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Controls\GroupListControl.xaml.cs">
       <DependentUpon>GroupListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\PersonInfoControl.xaml.cs">
+      <DependentUpon>PersonInfoControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Controls\RuleListControl.xaml.cs">
       <DependentUpon>RuleListControl.xaml</DependentUpon>
@@ -103,6 +116,9 @@
     </Compile>
     <Compile Include="Views\Controls\UserListControl.xaml.cs">
       <DependentUpon>UserListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\CustomerEditDialog.xaml.cs">
+      <DependentUpon>CustomerEditDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Forms\UserEditDialog.xaml.cs">
       <DependentUpon>UserEditDialog.xaml</DependentUpon>
@@ -119,6 +135,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GMPress.Data\GMPress.Data.csproj">
+      <Project>{9232e1be-1a55-44bf-93d7-1bc518d959ab}</Project>
+      <Name>GMPress.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GMPress.Administration.Data\GMPress.Administration.Data.csproj">
+      <Project>{996f36cc-e969-4731-8118-671fc872680d}</Project>
+      <Name>GMPress.Administration.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

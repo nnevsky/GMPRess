@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace GMPRess.Administration.Views.Forms
+namespace GMPress.Administration.Views.Forms
 {
     /// <summary>
     /// Interaction logic for UserEditDialog.xaml

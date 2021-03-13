@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace GMPress.Data.Entities
 {
-    public abstract class Order
+    public class CustomerAddress
     {
-        public int OrderId { get; set; }
-        public int OrderNum { get; set; }
-        public string OrderName { get; set; }
-
-        public double Summ { get; set; }
-
         public Customer Customer { get; set; }
+        public List<Address> Addresses { get; set; } = new List<Address>();
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GMPRess.Administration.Views.Controls
+namespace GMPress.Administration.Views.Controls
 {
     /// <summary>
     /// Interaction logic for RuleListControl.xaml

@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GMPress.Data.Entities
+namespace GMPress.Data.ENUM
 {
-    public abstract class DisplayConverter
+    public enum ACCESS_LEVEL
     {
-        public abstract override string ToString();
+        DENY = 0,
+        VIEW = 1,
+        EDIT = 2
     }
 }
